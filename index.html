@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu_titulo">carrobaomemo</li>
+                <li class="lista-menu_item"><a href="#">carros</a></li>
+                <li class="lista-menu_item"><a href="#">usados</a></li>
+                <li class="lista-menu_item"><a href="#">antigao</a></li>
+                <li class="lista-menu_item"><a href="#">peças</a></li>
+                <li class="lista-menu_item"><a href="#">valores e empresa</a></li>
+                <li class="lista-menu_item"><a href="#">contratamos</a></li>
+                <li class="lista-menu_item"><a href="#">fiado igual no bar</a></li>
+             </ul>
+           <a href="#"><img class="container__imagem" src="img/costaesilvafoto.jpg" alt="logotipo da biblioteca start"></a>
+        </div>
+        <div class="container">
+           <a href="#"><img class="container__imagem" src="img/Favoritos.svg" alt="meus Favoritos"></a>
+           <a href="#"><img class="container__imagem" src="img/Emprestimos.svg" alt="meus empréstimos"></a>
+           <a href="#"><img class="container__imagem" src="img/Usuario.svg" alt="meu perfil"></a>
+        </div>
+    </header>
+    <section class="gridimg">
+        <div class="div-todasimagens">
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/-toyota-supra.jpg" alt="">
+                <h1 class="titulo">TOYOTA SUPRA</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/nissan-skyline-.webp" alt="">
+                <h1 class="titulo">skyline</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/mitsubishi-eclipse-.jpg" alt="">
+                <h1 class="titulo">mitsubishi eclipse</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/honda s2000.webp" alt="">
+                <h1 class="titulo">Honda S2000</h1>
+            </div>
+    
+            <div class="div-imagem">
+                <img class="Imagem" src="img/Lancer mitsubishi.jpg" alt="">
+                <h1 class="titulo">lancer mitsubishi</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/Dodge-Charger-R-T (11).jpg" alt="">
+                <h1 class="titulo">Dodge Charger</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/eclipse spyder gts.png" alt="">
+                <h1 class="titulo">mitsubishi eclipse spyder</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/maxda-rx-7.webp" alt="">
+                <h1 class="titulo">maxda rx7</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/ford escort mk1.jpeg" alt="">
+                <h1 class="titulo">ford escort mk1</h1>
+            </div>
+        </div>
+          <section class="carrossel">
+            <h2 class="titulo__carrossel">Carros</h2>
+                <!-- Slider main container -->
+            <div class="swiper">
+    <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+      <!-- Slides -->
+            <div class="swiper-slide"><img src="img/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/2.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/3.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/4.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/5.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/6.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/7.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/8.png" alt=""></div>
+      ...
+            </div>
+    <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+                </div>
+          </section>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+              spaceBetween: 400,
+              slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
+</body>
+</html>
